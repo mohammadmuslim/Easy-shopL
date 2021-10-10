@@ -13,7 +13,7 @@ class UserController extends Controller
             return "user name or pass does not match";
         }else{
             $req->session()->put('user',$user);
-            return redirect('/home');
+            return redirect('/');
         }
     }
 }
